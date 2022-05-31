@@ -1,0 +1,15 @@
+Logger: es una forma de registrar todas las acciones que estamos realizando
+en un documento externo/ impresiones
+
+Clases - CRM
+
+Producto
+Cliente
+Facturacion
+Proveedores
+Promosiones
+
+todas estas clases se deben imprimir todas las acciones
+que se vayan realizando con estos.
+El LOGGER sera el Singleton
+Logger  -----> Singleton
