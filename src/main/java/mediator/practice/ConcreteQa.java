@@ -13,7 +13,7 @@ public class ConcreteQa extends Persona{
     }
     @Override
     public void received(String msg) {
-        System.out.println("DEV received: ["+ msg +"]");
+        System.out.println("QA received: [ "+getNombre()+", "+ msg +" ]");
     }
 
     public String getNombre() {

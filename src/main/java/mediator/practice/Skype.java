@@ -58,6 +58,12 @@ public class Skype implements ICanalComunicacion{
                     concreteSmHashMap.get(i).received(msg);
                 }
             }
+            for(int j  = 0; j<numero2;j++){
+                concreteDevHashMap.get(j).received(msg);
+            }
+            for(int k  = 0; k<numero1;k++){
+                concreteQaHashMap.get(k).received(msg);
+            }
         }
 
 
