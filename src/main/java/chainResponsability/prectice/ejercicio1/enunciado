@@ -1,0 +1,9 @@
+Se tiene un programa que controla el procesa de obtener
+carnets en Bolivia
+
+-requisitos (certificado nacimiento, pago al banco, ficha atencion)
+
+-nos falta CN --------> Notario
+-nos falta pago al Banco----------> Cajero - Banco
+- nos falta ficha atencion --------> Organizador Fichas
+-nso falta mas de un requisito-------> atencion al cliente
