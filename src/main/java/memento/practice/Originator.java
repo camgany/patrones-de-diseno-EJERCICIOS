@@ -6,7 +6,7 @@ public class Originator {
 
 
     public void setMemento(BaseDatos state){
-        this.state=state;
+        this.state= state;
     }
 
     public Memento createMemento(){
