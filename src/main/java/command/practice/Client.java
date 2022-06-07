@@ -11,8 +11,10 @@ public class Client {
 
         Defender defender = new Defender();
 
-        defender.addCommand(disparar);
         defender.addCommand(defensa);
+        defender.addCommand(atacar);
+        defender.addCommand(disparar);
+        defender.addCommand(disparar);
         defender.addCommand(atacar);
 
         defender.runCommands();
