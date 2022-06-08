@@ -25,8 +25,5 @@ public class Cliente implements IObserver {
     public Set<NotiType> getNotiTypeSet() {
         return notiTypeSet;
     }
-    //@Override
-    //public Map<Persona,NotiType> getPersonaNotiTypeMap(){
-    //    return personaNotiTypeMap;
-    //}
+
 }
