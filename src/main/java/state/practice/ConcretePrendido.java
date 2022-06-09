@@ -11,7 +11,9 @@ public class ConcretePrendido implements IState {
         int a;
         a = new Random().nextInt(20);
         System.out.println("-------------------------PRENDIDO--------------------------");
-        System.out.println("Cantidad de recursos abiertos: "+a);
+        System.out.println(a);
+        context.setProgramaAbierto(new String[a]);
+        System.out.println("Cantidad de recursos abiertos: "+context.getProgramaAbierto().length);
         context.getConsumoMemoria().setConsumo(a*5);
         System.out.print("Consumo de Memoria RAM: " +context.getConsumoMemoria().getConsumo());
         context.getComsumoCPU().setConsumo(a*5);

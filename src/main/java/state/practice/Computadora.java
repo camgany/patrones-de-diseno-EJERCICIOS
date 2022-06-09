@@ -5,14 +5,13 @@ public class Computadora {
     //apagado, prendido y reiniciar
     private ComsumoCPU comsumoCPU;
     private ConsumoMemoria consumoMemoria;
-    private ProgramaAbierto programaAbierto;
+    private String[] programaAbierto;
     private IState state = new ConcreteApagado();
 
     public Computadora(){
         comsumoCPU = new ComsumoCPU();
         consumoMemoria = new ConsumoMemoria();
-        programaAbierto = new ProgramaAbierto();
-        programaAbierto.programas.clear();
+        programaAbierto = new String[0];
         consumoMemoria.setConsumo(10);
         comsumoCPU.setConsumo(10);
     }
@@ -33,11 +32,11 @@ public class Computadora {
         this.consumoMemoria = consumoMemoria;
     }
 
-    public ProgramaAbierto getProgramaAbierto() {
+    public String[] getProgramaAbierto() {
         return programaAbierto;
     }
 
-    public void setProgramaAbierto(ProgramaAbierto programaAbierto) {
+    public void setProgramaAbierto(String[] programaAbierto) {
         this.programaAbierto = programaAbierto;
     }
 

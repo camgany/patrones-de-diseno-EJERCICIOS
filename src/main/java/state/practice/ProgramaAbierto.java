@@ -4,13 +4,13 @@ import java.lang.reflect.Array;
 import java.util.ArrayList;
 
 public class ProgramaAbierto {
-    ArrayList<String> programas = new ArrayList<>();
+    String[] programas;
 
-    public ArrayList<String> getProgramas() {
+    public String[] getProgramas() {
         return programas;
     }
 
-    public void setProgramas(ArrayList<String> programas) {
+    public void setProgramas(String[] programas) {
         this.programas = programas;
     }
 }
