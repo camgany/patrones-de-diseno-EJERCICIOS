@@ -11,13 +11,13 @@ public class LibreCambista implements ILibreCambista {
 
     }
 
-    public void darDolares(int dolares) {
+    public void saldoEnDolares(int dolares) {
 
         saldoDolares += dolares;
 
     }
 
-    public void darMonedaPais(int monedaPais) {
+    public void saldoEnMonedaPais(int monedaPais) {
 
         saldoMonedaPais += monedaPais;
 
@@ -27,20 +27,14 @@ public class LibreCambista implements ILibreCambista {
 
 
     public void visitarPais(ConcreteBolivia bolivia, EleccionDeCambio eleccionDeCambio) {
-
-        System.out.println(nombre + " está visitando Bolivia!");
         if(eleccionDeCambio.equals(EleccionDeCambio.DOLARALOCAL)) {
-            System.out.println(nombre + " cuenta con " + saldoDolares + "$");
-            System.out.println("Como un dolar en bolivianos son 6.88 Bs... ");
-            System.out.println(saldoDolares + "$" + " en bolivianos son: " + String.format("%.2f", saldoDolares * 6.88) + "Bs.");
-            System.out.println("/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*//*/*");
+            System.out.println("El visitante: "+ nombre + " tiene " + saldoDolares + "dolares");
+            System.out.println(" Su saldo en Bolivianos es " + String.format("%.2f", saldoDolares * 6.98) + "Bolivianos");
 
 
         } else {
-            System.out.println(nombre + " cuenta con " + saldoMonedaPais + "Bs.");
-            System.out.println("Como un boliviano en dolares son 0.15$...");
-            System.out.println(saldoMonedaPais + " Bs." + "en dolares son: " + String.format("%.2f", saldoMonedaPais * 0.15) + "$");
-            System.out.println("/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*//*/*");
+            System.out.println("El visitante: "+ nombre + " tiene " + saldoMonedaPais + "Bolivianos");
+            System.out.println(" Su saldo en Dolares es " + String.format("%.2f", saldoMonedaPais * 0.15) + "dolares");
         }
 
 
@@ -51,18 +45,13 @@ public class LibreCambista implements ILibreCambista {
     @Override
     public void visitarPais(ConcreteBrasil brasil, EleccionDeCambio eleccionDeCambio) {
 
-        System.out.println(nombre + " está visitando Brasil!");
         if(eleccionDeCambio.equals(EleccionDeCambio.DOLARALOCAL)) {
-            System.out.println(nombre + " cuenta con " + saldoDolares + "$");
-            System.out.println("Como un dolar en reales brasileños son 5.12 R$... ");
-            System.out.println(saldoDolares + "$" + " en reales brasileños son: " + String.format("%.2f", saldoDolares * 5.12) + "R$");
-            System.out.println("/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*//*/*");
+            System.out.println("El visitante: "+ nombre + " tiene " + saldoDolares + "dolares");
+            System.out.println(" Su saldo en Reales es " + String.format("%.2f", saldoDolares * 5.12) + "Reales");
 
         } else {
-            System.out.println(nombre + " cuenta con " + saldoMonedaPais + "R$");
-            System.out.println("Como un real brasileño en dolares son 0.20$...");
-            System.out.println(saldoMonedaPais + " R$" + "en dolares son: " + String.format("%.2f", saldoMonedaPais * 0.20) + "$");
-            System.out.println("/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*//*/*");
+            System.out.println("El visitante: "+ nombre + " tiene " +  saldoMonedaPais + "Reales");
+            System.out.println(" Su saldo en Dolares es " +  String.format("%.2f", saldoMonedaPais * 0.20) + "Dolares");
         }
 
     }
@@ -70,18 +59,13 @@ public class LibreCambista implements ILibreCambista {
     @Override
     public void visitarPais(ConcreteArgentina argentina, EleccionDeCambio eleccionDeCambio) {
 
-        System.out.println(nombre + " está visitando Argentina!");
         if(eleccionDeCambio.equals(EleccionDeCambio.DOLARALOCAL)) {
-            System.out.println(nombre + " cuenta con " + saldoDolares + "$");
-            System.out.println("Como un dolar en pesos argentinos son 122.86$... ");
-            System.out.println(saldoDolares + "$" + " en pesos argentinos son: " + String.format("%.2f", saldoDolares * 122.86) + "$");
-            System.out.println("/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*//*/*");
+            System.out.println("El visitante: "+ nombre + " tiene " + saldoDolares + "dolares");
+            System.out.println(" Su saldo en Pesos Argentinos es "  + String.format("%.2f", saldoDolares * 122.86) + "Pesos Argentinos");
 
         } else {
-            System.out.println(nombre + " cuenta con " + saldoMonedaPais + "$");
-            System.out.println("Como un peso argentino en dolares son 0.0081$...");
-            System.out.println(saldoMonedaPais + " $" + "en dolares son: " + String.format("%.2f", saldoMonedaPais * 0.0081) + "$");
-            System.out.println("/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*//*/*");
+            System.out.println("El visitante: "+ nombre + " tiene " + saldoMonedaPais + "pesos Argentinos");
+            System.out.println(" Su saldo en Dolares es "  + String.format("%.2f", saldoMonedaPais * 0.0081) + "Dolares");
         }
 
     }
@@ -89,21 +73,15 @@ public class LibreCambista implements ILibreCambista {
     @Override
     public void visitarPais(ConcreteItalia italia, EleccionDeCambio eleccionDeCambio) {
 
-        System.out.println(nombre + " está visitando Italia!");
-
         if(eleccionDeCambio.equals(EleccionDeCambio.DOLARALOCAL)) {
 
-            System.out.println(nombre + " cuenta con " + saldoDolares  + "$");
-            System.out.println("Como un dolar en euros son 0.95€... " );
-            System.out.println(saldoDolares + "$" + " en euros son: " + String.format("%.2f", saldoDolares*0.95) + "€");
-            System.out.println("/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*//*/*");
+            System.out.println("El visitante: "+ nombre + " tiene " + saldoDolares  + "Dolares");
+            System.out.println(" Su saldo en Euros es "  +  String.format("%.2f", saldoDolares*0.95) + "Euros");
 
 
         } else {
-            System.out.println(nombre + " cuenta con " + saldoMonedaPais + "€");
-            System.out.println("Como un euro en dolares son 1.05$...");
-            System.out.println(saldoMonedaPais + " €" + "en dolares son: " + String.format("%.2f", saldoMonedaPais*1.05) + "$");
-            System.out.println("/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*//*/*");
+            System.out.println("El visitante: "+ nombre + " tiene " + saldoMonedaPais + "Euros");
+            System.out.println(" Su saldo en Dolares es "  +  String.format("%.2f", saldoMonedaPais*1.05) + "Dolares");
 
         }
 

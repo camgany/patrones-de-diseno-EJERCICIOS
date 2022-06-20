@@ -29,14 +29,14 @@ public class Refrigerador implements IAdquiridos {
     @Override
     public void costo() {
 
-        System.out.println("El costo del refrigerador es de: " + costo + "$");
+        System.out.println("Costo refrigerador: " + costo + "$");
 
     }
 
     @Override
     public void tiempoDeGarantia() {
 
-        System.out.println("El tiempo de garantia del refrigerador es de: " + tiempoDeGarantiaEnMeses + " meses");
+        System.out.println("Tiempo de garantia refrigerador: " + tiempoDeGarantiaEnMeses + " meses");
 
     }
 }

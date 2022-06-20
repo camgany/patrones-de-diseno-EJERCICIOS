@@ -29,14 +29,14 @@ public class Televisor implements IAdquiridos {
     @Override
     public void costo() {
 
-        System.out.println("El costo del televisor es de: " + costo + "$");
+        System.out.println("Costo Televisor: " + costo );
 
     }
 
     @Override
     public void tiempoDeGarantia() {
 
-        System.out.println("El tiempo de garantia del televisor es de: " + tiempoDeGarantiaEnMeses + " meses");
+        System.out.println("Tiempo de garantia televisor: " + tiempoDeGarantiaEnMeses + " meses");
 
     }
 }

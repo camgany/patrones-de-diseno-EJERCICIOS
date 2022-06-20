@@ -4,10 +4,10 @@ public class Client {
 
     public static void main(String[] args) {
 
-        LibreCambista libreCambista = new LibreCambista("Dalas");
+        LibreCambista libreCambista = new LibreCambista("Laura Bozzo");
 
-        libreCambista.darDolares(30);
-        libreCambista.darMonedaPais(300);
+        libreCambista.saldoEnDolares(50);
+        libreCambista.saldoEnMonedaPais(255);
 
         ConcreteBolivia bolivia = new ConcreteBolivia();
         ConcreteBrasil brasil = new ConcreteBrasil();

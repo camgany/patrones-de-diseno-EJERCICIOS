@@ -29,14 +29,14 @@ public class Lavadora implements IAdquiridos {
     @Override
     public void costo() {
 
-        System.out.println("El costo de la lavadora es de: " + costo + "$");
+        System.out.println("Costo Lavadora: " + costo);
 
     }
 
     @Override
     public void tiempoDeGarantia() {
 
-        System.out.println("El tiempo de garantia de la lavadora es de: " + tiempoDeGarantiaEnMeses + " meses");
+        System.out.println("Tiempo de garantia Lavadora: " + tiempoDeGarantiaEnMeses + " meses");
 
     }
 }

@@ -29,14 +29,14 @@ public class Celular implements IOriginal {
     @Override
     public void precio() {
 
-        System.out.println("El precio del celular es de: " + precio + "$");
+        System.out.println("Precio celular: " + precio);
 
     }
 
     @Override
     public void tiempoDeVida() {
 
-        System.out.println("El tiempo de vida del celular es de: " + tiempoDeVidaEnMeses + " meses");
+        System.out.println("Tiempo de vida Celular: " + tiempoDeVidaEnMeses + " meses");
 
     }
 }

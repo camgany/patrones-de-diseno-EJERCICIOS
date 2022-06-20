@@ -29,14 +29,14 @@ public class Tablet implements IOriginal {
     @Override
     public void precio() {
 
-        System.out.println("El precio de la tablet es de: " + precio + "$");
+        System.out.println("Precio Tablet: " + precio);
 
     }
 
     @Override
     public void tiempoDeVida() {
 
-        System.out.println("El tiempo de vida de la tablet es de: " + tiempoDeVidaEnMeses + " meses");
+        System.out.println("Tiempo de vida Tablet: " + tiempoDeVidaEnMeses + " meses");
 
     }
 }

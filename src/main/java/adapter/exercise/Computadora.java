@@ -29,14 +29,14 @@ public class Computadora implements IOriginal {
     @Override
     public void precio() {
 
-        System.out.println("El precio de la computadora es de: " + precio + "$");
+        System.out.println("Precio computadora: " + precio);
 
     }
 
     @Override
     public void tiempoDeVida() {
 
-        System.out.println("El tiempo de vida de la computadora es de: " + tiempoDeVidaEnMeses + " meses");
+        System.out.println("Tiempo de vida Computadora: " + tiempoDeVidaEnMeses + " meses");
 
     }
 }
