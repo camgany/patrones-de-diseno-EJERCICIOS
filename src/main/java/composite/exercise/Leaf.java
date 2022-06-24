@@ -1,13 +1,20 @@
 package composite.exercise;
 
 public class Leaf extends Component {
-    public Leaf(String type) {
+
+    public Leaf(String type, int precio) {
         super(type);
+        setPrice(precio);
+    }
+
+    @Override
+    public void prices() {
+        System.out.println();
     }
 
     @Override
     public void operation() {
-        setPrice(100);
+        System.out.println("Type: "+getType()+" Price: "+getPrice());
     }
 
     @Override

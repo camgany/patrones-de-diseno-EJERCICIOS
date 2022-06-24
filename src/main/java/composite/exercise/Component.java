@@ -26,6 +26,7 @@ public abstract class Component {
         this.price = price;
     }
 
+    public abstract void prices();
     public abstract void operation();
     public abstract void add(Component component);
     public abstract void remove(Component component);
